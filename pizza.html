@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizza.css">
+    <style>
+    @font-face {
+    font-family: Alegreya;
+    src: url(fonts/Alegreya-Black.ttf);
+   }
+    @font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+   }
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <div><img src="icon/Logo.svg"></div>
+        <div class="header-info">
+            <div>МЕНЮ</div>
+            <div class="about-us">О НАС</div>
+            <div>КОНТАКТЫ</div>
+        </div>
+        <div class="header-phone">
+            <div class="header-logo-phone"><img src="icon/logo-phone.svg"></div>
+            <div class='header-tel-grafik'>
+                <div class="header-tel">+7 (918) 432-65-87</div>
+                <div class="header-grafik">Ежедневно с 9:00 до 23:00</div>
+            </div>
+
+        </div>
+        <div class="header-zakaz">
+            <div class="header-zakaz-logo"><img src="icon/logo-pizza.svg"></div>
+            <div class="header-zakaz-text-count">
+                <div class="header-zakaz-text">ВАШ ЗАКАЗ</div>
+                <div class="header-zakaz-count">Итальянская и ещё 2 пиццы</div>
+            </div>
+        </div>
+        <div><img src="icon/round-language.png"></div>
+    </header>
+    <div class="present-banner">
+       <div class="empty-present-banner"></div>
+        <div class="present-banner-text-time-button">
+            <div class="present-banner-text"><h1>Пицца на заказ</h1></div>
+            <div class="present-banner-time">Бесплатная и быстрая доставка за час в любое удобное для вас время</div>
+            <div class="present-banner-button">
+                <div class="present-banner-button-name"><a href="#">ВЫБРАТЬ ПИЦЦУ</a></div>
+            </div>
+        </div>
+        <div class='present-banner-image'><img src="img/main_pizza_banner.jpg"></div>
+    </div>
+    <div class="sales">
+        <div class="sales-container">
+            <div class="sale-image"><img src="img/sale-one.jpg"></div>
+            <div class='sales-container-text-first'>Закажи 2 пиццы – 3-я в подарок</div>
+            <div class='sales-container-text-second'>При заказе 2-х больших пицц – средняя пицца в подарок</div>
+        </div>
+        <div class="sales-container">
+            <div class="sale-image"><img src="img/sale-two.jpg"></div>
+            <div class='sales-container-text-first'>Напиток в подарок</div>
+            <div class='sales-container-text-second'>Скидка на заказ от 3 000 рублей + напиток в подарок</div>
+        </div>
+        <div class="sales-container">
+            <div class="sale-image"><img src="img/sale-three.jpg"></div>
+            <div class='sales-container-text-first'>25% при первом заказе</div>
+            <div class='sales-container-text-second'>Скидка новым клиентам!</div>
+        </div>
+    </div>
+    <div class="change-pizza">Выберите пиццу</div>
+    <div class="menu-list">
+        <div><a href="#">ВСЕ</a></div>
+        <div><a href="#">ОСТРЫЕ</a></div>
+        <div><a href="#">МЯСНЫЕ</a></div>
+        <div><a href="#">СЫРНЫЕ</a></div>
+        <div><a href="#">ВЕГАНСКИЕ</a></div>
+    </div>
+    <div class="menu-pizzas">
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/01.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Итальянская</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/02.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Маргарита</div>
+            <div class="cart-pizza-ingridients">Тесто со шпинатом, молодой сыр и колбаски, много колбасок</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>479</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/03.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Барбекю</div>
+            <div class="cart-pizza-ingridients">Циплёнок (маленький кура), оливки, моцарелла, соус барбекю</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/04.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Вегетарианская</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>399</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/05.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Мясная</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/06.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Овощная</div>
+            <div class="cart-pizza-ingridients">Тесто со шпинатом, молодой сыр и колбаски, много колбасок</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>479</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/07.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Римская</div>
+            <div class="cart-pizza-ingridients">Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/08.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">С грибами</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>399</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/09.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Сырная</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/10.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Четыре сыра</div>
+            <div class="cart-pizza-ingridients">Тесто со шпинатом, молодой сыр и колбаски, много колбасок</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>479</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/11.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Пепперони Фреш с томатами</div>
+            <div class="cart-pizza-ingridients">Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>699</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+        <div class="cart-pizza">
+            <div class="cart-pizza-image-container">
+               <div class="cart-pizza-image">
+                   <img src="img-pizza/12.png">
+               </div>
+            </div>
+            <div class="cart-pizza-name">Ветчина и сыр</div>
+            <div class="cart-pizza-ingridients">Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</div>
+            <div class="cart-pizza-size-text">Размер, см:</div>
+            <div class="cart-pizza-sizes">
+                <div>20</div>
+                <div>30</div>
+                <div>40</div>
+            </div>
+            <div class="cart-pizza-price">от <span>399</span> руб.</div>
+            <div class="cart-pizza-button">
+                <div class="cart-pizza-button-name">
+                    ЗАКАЗАТЬ
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-drive-cash">
+        <div class="drive-cash-head">Доставка и оплата</div>
+        <div class="banner-drive-cash-slide">
+            <div class="banner-drive-cash-slide-num">
+                <div class="banner-drive-cash-slide-num-img">
+                    <img src="icon/head-phone.svg">
+                </div>
+                <div class="banner-drive-cash-slide-num-texts">
+                    <div class="banner-drive-cash-slide-num-zakaz">Заказ</div>
+                    <div class="banner-drive-cash-slide-num-call">После оформления заказа мы свяжемся с вами для уточнения деталей.</div>
+                </div>
+        </div>
+       <div class="banner-drive-cash-slide-num">
+                <div class="banner-drive-cash-slide-num-img">
+                    <img src="icon/icon-delivery.svg">
+                </div>
+                <div class="banner-drive-cash-slide-num-texts">
+                    <div class="banner-drive-cash-slide-num-zakaz">Доставка курьером</div>
+                    <div class="banner-drive-cash-slide-num-call">Мы доставим вашу пиццу горячей. Бесплатная доставка по городу.</div>
+                </div>
+        </div>
+        <div class="banner-drive-cash-slide-num">
+                <div class="banner-drive-cash-slide-num-img">
+                    <img src="icon/icon-pay.svg">
+                </div>
+                <div class="banner-drive-cash-slide-num-texts">
+                    <div class="banner-drive-cash-slide-num-zakaz">Оплата</div>
+                    <div class="banner-drive-cash-slide-num-call">Оплатить можно наличными или картой курьеру. И золотом тоже можно.</div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="about-us-container">
+        <div class="about-us-slide">
+                <div class="about-us-slide-img">
+                    <img src="img/make%20one.png">
+                </div>
+                <div class="about-us-slide-texts">
+                    <div class="about-us-slide-head">Изготавливаем пиццу<br>
+                     по своим рецептам в лучших<br> традициях</div>
+                    <div class="about-us-slide-head-foot">Наша пицца получается сочной, вкусной и главное хрустящей с нежной и аппетитной начинкой, готовим по своим итальянским рецептам</div>
+                </div>
+                <div class="empty-again"></div>
+        </div>
+        <div class="about-us-slide">
+               <div class="empty-again"></div>
+                <div class="about-us-slide-texts">
+                    <div class="about-us-slide-head">Используем только свежие ингридиенты</div>
+                    <div class="about-us-slide-head-foot">Ежедневно заготавливаем продукты и овощи для наших пицц, соблюдаем все сроки хранения</div>
+                </div>
+                <div class="about-us-slide-img">
+                    <img class="about-us-slide-img-round" src="img/make-two.png">
+                </div>
+        </div>
+        <div class="about-us-slide">
+                <div class="about-us-slide-img">
+                    <img class="about-us-slide-img-round"  src="img/make-three.png">
+                </div>
+                <div class="about-us-slide-texts">
+                    <div class="about-us-slide-head">Доставка в течение 60 минут или заказ за нас счёт</div>
+                    <div class="about-us-slide-head-foot">Все наши курьеры – фанаты серии Need for Speed и призеры гонок World Rally Championship и World Superbike во всех категориях</div>
+                </div>
+                <div class="empty-again"></div>
+        </div>
+    </div>
+
+    <div class="footer-image">
+        <div class="footer-image-insta, drive-cash-head">Следите за нами в Instagram</div>
+        <div class="footer-image-insta-url">@pizzamenu</div>
+        <div class="footer-image-container">
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-phone-container">
+            <div class="footer-phone">+7 (918) 432-65-87</div>
+            <div class="footer-time">Ежедневно с 9:00 до 23:00</div>
+        </div>
+        <div class="footer-politic">Политика конфиденциальности</div>
+    </div>
+
+
+    <div id="popup">
+      <div id="window-popup">
+            <div class="top">
+                <div class="top-text">Ваш заказ</div>
+                <div class="top-exit">
+                    <img src="icon/x-exit.svg">
+                </div>
+            </div>
+            <div class="line"></div>
+        <div class="parent-pizza-basket">
+              <div class="pizza-basket">
+               <div class="pizza-basket-first">
+                   <div class="pizza-basket-image">
+                        <img src="img-pizza/01.png">
+                    </div>
+                    <div class="pizza-basket-name-and-size">
+                        <div class="pizza-basket-name">Итальянская</div>
+                        <div class="pizza-basket-size"><span>30</span> см</div>
+                    </div>
+               </div>
+                <div class="amount">
+                    <div class="amount-round">-</div>
+                    <div class="amount-input">1</div>
+                    <div class="amount-round">+</div>
+                </div>
+                <div class="pizza-basket-price"><span>699</span> руб</div>
+                <div class="pizza-basket-delete">
+                    <img src="icon/x-delete.svg">
+                </div>
+             </div>
+        </div>
+        <div class="sum">Сумма заказа <span>0</span> руб.</div>
+      </div>
+    </div>
+
+
+
+<script src="pizza.js"></script>
+</body>
+</html>

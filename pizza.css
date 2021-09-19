@@ -1,0 +1,632 @@
+#popup{
+    display: none;
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(1,1,1,0.9); /* цвет фона */
+    z-index: 2;
+    opacity: 1; /* по умолчанию модальное окно прозрачно */
+    margin: 0;
+    padding: 0;
+}
+#window-popup{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    background-color: white;
+    margin: auto auto;
+}
+.top{
+    display: flex;
+    width: 90%;
+    height: 96px;
+    justify-content: space-between;
+    margin: auto auto;
+    align-items: center;
+}
+.top-exit{
+
+    margin-top: -7%;
+    width: 3.2%;
+}
+.top-exit img{
+    width: 100%;
+}
+.top-text{
+    font-family: Alegreya;
+    font-size: 25px;
+}
+.top-exit:hover{
+    cursor: pointer;
+}
+.line{
+    width: 90%;
+    height: 1px;
+    background-color: #bdbdbd;
+    margin: auto auto;
+    margin-bottom: 3%;
+}
+.parent-pizza-basket{
+    width: 90%;
+    margin: auto auto;
+}
+.pizza-basket{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto auto;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.pizza-basket-first{
+    display: flex;
+    width: 50%;
+}
+.pizza-basket-image{
+    width: 30%;
+    margin-right: 2%;
+}
+.pizza-basket-image img{
+    width: 100%;
+}
+.pizza-basket-name-and-size{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.pizza-basket-name{
+    font-family: Alegreya;
+    font-size: 17px;
+    margin-bottom: 1%;
+}
+.pizza-basket-size{
+    font-family: Roboto;
+    font-size: 11px;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.amount-round{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a6a6a6;
+    text-align: center;
+    line-height: 30px;
+    font-family: Alegreya;
+    color: white;
+}
+.amount-input{
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #a6a6a6;
+    margin: 2% 2%;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.pizza-basket-price{
+    font-family: Alegreya;
+    font-size: 20px;
+}
+.pizza-basket-delete{
+    margin-top: -15%;
+}
+.sum{
+    align-self: flex-end;
+    font-family: Alegreya;
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+
+
+
+
+
+
+
+
+header{
+    display: flex;
+    margin: auto auto;
+    width: 80%;
+    height: 176px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-info{
+    display: flex;
+    width: 18%;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Alegreya;
+}
+.about-us{
+    color: red;
+}
+.header-phone{
+    display: flex;
+    align-items: center;
+    width: 18%;
+}
+.header-logo-phone{
+    margin-right: 4%;
+}
+.header-tel-grafik{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    justify-content: flex-end;
+}
+.header-tel{
+    font-family: Alegreya;
+    font-size: 21px;
+}
+.header-grafik{
+    font-size: 11px;
+    color: #919191;
+}
+.header-zakaz{
+    display: flex;
+    width: 15%;
+}
+.header-zakaz:hover{
+    cursor: pointer;
+}
+.header-zakaz-logo{
+    margin-right: 4%;
+}
+.header-zakaz-text-count{
+    display: flex;
+    flex-direction: column;
+}
+.header-zakaz-text{
+    font-family: Alegreya;
+    margin-bottom: 3%;
+}
+.header-zakaz-count{
+    font-size: 11px;
+    color: #919191;
+}
+.present-banner{
+    display: flex;
+    margin-bottom: 40px;
+}
+.empty-present-banner{
+    width: 10%;
+}
+.present-banner-text-time-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 41.5%;
+}
+.present-banner-text{
+    font-family: Alegreya;
+    font-size: 29px;
+}
+.present-banner-time{
+    width: 55%;
+    font-size: 18px;
+    margin-top: -4%;
+    margin-bottom: 5%;
+    font-family: Roboto;
+}
+.present-banner-button{
+    width: 37%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f5142e;
+    font-size: 15px;
+    font-family: Alegreya;
+    text-align: center;
+    line-height: 45px;
+}
+.present-banner-button-name a{
+    text-decoration: none;
+     color: white;
+}
+.present-banner-image{
+    width: 48.5%;
+}
+.present-banner-image img{
+    width: 100%;
+}
+/*Sale*/
+.sales{
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sales-container{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+.sale-image{
+    width: 100%;
+}
+.sale-image img{
+    width: 100%
+}
+.sales-container-text-first{
+    font-family: Alegreya;
+    font-size: 23px;
+}
+.sales-container-text-second{
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+.change-pizza{
+    display: flex;
+    margin: auto auto;
+    margin-top: 80px;
+    width: 80%;
+    justify-content: center;
+    font-family: Alegreya;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.menu-list{
+    display: flex;
+    width: 40%;
+    margin: auto auto;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.menu-list div a{
+    text-decoration: none;
+    color: black;
+    font-family: Alegreya;
+}
+.menu-list div a:hover{
+    color: red;
+}
+.menu-pizzas{
+    display: flex;
+    width: 80%;
+    margin: auto auto;
+    flex-wrap: wrap
+}
+.cart-pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 23.5%;
+    height: 540px;
+    box-shadow: 0px 6px 12px -4px rgba(34, 60, 80, 0.2);
+    margin-bottom: 2%;
+}
+.cart-pizza:not(:nth-child(4n)){
+    margin-right: 2%;
+}
+.cart-pizza-image-container{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: auto auto;
+}
+.cart-pizza-image{
+    margin: auto auto;
+}
+.cart-pizza-image img{
+    width: 184px;
+}
+.cart-pizza-name{
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 23px;
+}
+.cart-pizza-ingridients{
+    margin: 25px 25px;
+    text-align: center;
+    font-size: 11px;
+    color: #919191;
+}
+.cart-pizza-size-text{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+}
+.cart-pizza-sizes{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto auto;
+    justify-content: center;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+.cart-pizza-sizes div{
+    width: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: #999;
+}
+.cart-pizza-sizes div:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.cart-pizza-price{
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 25px;
+}
+  .cart-pizza-button{
+    display: flex;
+    margin: auto auto;
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f5142e;
+    font-size: 15px;
+    font-family: Alegreya;
+    justify-content: center;
+    line-height: 45px;
+}
+.cart-pizza-button-name{
+     color: white;
+}
+.cart-pizza-button:hover{
+    cursor: pointer;
+}
+
+.banner-drive-cash{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f0f0ed;
+    height: 387px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.drive-cash-head{
+    font-size: 45px;
+    font-family: Alegreya;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.banner-drive-cash-slide{
+    display: flex;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    height: 144px;
+    background-color: #f0f0ed;
+    justify-content: space-between;
+}
+.banner-drive-cash-slide-num{
+    display: flex;
+    background-color: white;
+    width: 30%;
+    justify-content: space-around;
+}
+.banner-drive-cash-slide-num-img{
+    margin: auto 0 auto 0;
+    width: 18.75%;
+}
+.banner-drive-cash-slide-num-img img{
+    width: 100%;
+}
+.banner-drive-cash-slide-num-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 0;
+    width: 64%;
+}
+.banner-drive-cash-slide-num-zakaz{
+    font-family: Alegreya;
+    font-size: 24px;
+}
+.banner-drive-cash-slide-num-call{
+    font-family: Roboto;
+    font-size: 10.5px;
+}
+
+
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto auto;
+}
+.about-us-slide{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 4%;
+}
+.empty-again{
+    width: 20%;
+}
+.about-us-slide-img{
+    width: 34%;
+    margin: auto 0 auto 0;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+.about-us-slide-img img{
+    width: 100%;
+}
+.about-us-slide-img-round{
+    border-radius: 40%;
+}
+.about-us-slide-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 0;
+    width: 53%;
+}
+.about-us-slide-head{
+    font-family: Alegreya;
+    font-size: 30px;
+}
+.about-us-slide-head-foot{
+    margin-top: 2%;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.footer-image{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.footer-image-insta-url{
+    font-family: Alegreya;
+    font-size: 19px;
+    text-align: center;
+    color: #8c8c8c;
+}
+.footer-image-container{
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer-image-container img{
+    width: 20%;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+}
+.footer-phone-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.footer-phone{
+    font-family: Alegreya;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.footer-time{
+    font-family: Roboto;
+    font-size: 12px;
+}
+.footer-politic{
+    font-family: Roboto;
+    font-size: 12px;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+.header-info{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 24px;
+    justify-content: space-between;
+    margin-top: -4%;
+    font-family: Alegreya;
+}
+.header-phone{
+    display: flex;
+    align-items: center;
+    width: 18%;
+}
+.header-logo-phone{
+    margin-right: 4%;
+}
+.header-tel-grafik{
+    display: none;
+    flex-direction: column;
+    margin-bottom: 1%;
+    justify-content: flex-end;
+}
+.header-zakaz{
+    display: flex;
+    width: 15%;
+}
+.header-zakaz:hover{
+    cursor: pointer;
+}
+.header-zakaz-logo{
+    margin-right: 4%;
+}
+.header-zakaz-text-count{
+    display: none;
+    flex-direction: column;
+}
+.header-zakaz-text{
+    font-family: Alegreya;
+    margin-bottom: 3%;
+}
+.header-zakaz-count{
+    font-size: 11px;
+    color: #919191;
+}
+
+.cart-pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 31%;
+    height: 540px;
+    box-shadow: 0px 6px 12px -4px rgba(34, 60, 80, 0.2);
+    margin-bottom: 2%;
+}
+.cart-pizza:not(:nth-child(3n)){
+    margin-right: 2%;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1520px){
+.header-info{
+    display: flex;
+    width: 23%;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Alegreya;
+}
+.header-phone{
+    display: flex;
+    align-items: center;
+    width: 23%;
+}
+
+.cart-pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 31%;
+    height: 540px;
+    box-shadow: 0px 6px 12px -4px rgba(34, 60, 80, 0.2);
+    margin-bottom: 2%;
+}
+.cart-pizza:not(:nth-child(3n)){
+    margin-right: 2%;
+}
+
+}
+
+
+
+
+
+
+
+
